@@ -1,0 +1,278 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+   
+    
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: white;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.community-edition i {
+    
+    font-size: 60px;
+    color: #82ca9c;
+    margin-bottom: 20px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;   
+    transform: translate(0, 0);
+}
+.separator {
+    height: 2px;
+    width: 80px;
+    margin: auto;
+    background: #ededed;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.head_title {
+    margin-bottom: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-xs-12 {
+    margin-bottom: 5px;
+    width: 25%;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.community-edition {
+    background: #fff;
+    padding: 40px 15px;
+    border: 1px solid #ececec;
+    box-shadow: 2px 2px 5px 0 rgba(55,50,40,.20);
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(55,50,40,.20);
+    -moz-box-shadow: 2px 2px 5px 0 rgba(55,50,40,.20);
+    transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    border-radius: 25px;
+}
+
+.logo {
+    display: block;
+    width: 370px;
+    height: 420px;
+    background: url(../images/wemade.png) 50% 50% no-repeat;
+    position: relative;
+    z-index: 20;
+    margin: 80px auto 0;
+}
+h4.ideaname {
+    color: mediumseagreen;
+}
+.push-1 {
+    margin-left: 7.2525%;
+}
+
+.column-6 {
+    float: left;
+    margin-right: -100%;
+    width: 41.96%;
+}
+.banner {
+    background-image: url(../images/background.jpg);
+    -webkit-animation: 100s scroll infinite linear;
+    -moz-animation: 100s scroll infinite linear;
+    -o-animation: 100s scroll infinite linear;
+    animation: 100s scroll infinite linear;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pokedex-pokemon-profile, .pokedex-pokemon-details-right {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.conversation-wrap {
+    box-shadow: -2px 0 3px #ddd;
+    padding: 0;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.conversation {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+
+.message-wrap {
+    box-shadow: 0 0 3px #ddd;
+    padding: 0;
+}
+
+.msg {
+    padding: 5px;
+    /*border-bottom:1px solid #ddd;*/
+    margin: 0;
+}
+
+.msg-wrap {
+    padding: 10px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.time {
+    color: #bfbfbf;
+}
+
+.send-wrap {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    /*background: #f8f8f8;*/
+}
+
+.send-message {
+    resize: none;
+}
+
+.highlight {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+.send-message-btn {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-panel {
+    background: #f7f7f9;
+}
+
+    .btn-panel .btn {
+        color: #b8b8b8;
+        transition: 0.2s all ease-in-out;
+    }
+
+        .btn-panel .btn:hover {
+            color: #666;
+            background: #f8f8f8;
+        }
+
+        .btn-panel .btn:active {
+            background: #f8f8f8;
+            box-shadow: 0 0 1px #ddd;
+        }
+
+.btn-panel-conversation .btn, .btn-panel-msg .btn {
+    background: #f8f8f8;
+}
+
+    .btn-panel-conversation .btn:first-child {
+        border-right: 1px solid #ddd;
+    }
+
+.msg-wrap .media-heading {
+    color: gold;
+    font-weight: 700;
+}
+
+
+.msg-date {
+    background: none;
+    text-align: center;
+    color: #aaa;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+}
+
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    /*        -webkit-border-radius: 10px;
+        border-radius: 10px;*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /*        -webkit-border-radius: 10px;
+        border-radius: 10px;*/
+    background: #ddd;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #ddd;
+}

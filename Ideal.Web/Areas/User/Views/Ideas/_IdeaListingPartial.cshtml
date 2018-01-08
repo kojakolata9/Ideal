@@ -1,0 +1,15 @@
+﻿
+@model IEnumerable<Ideal.Services.Models.IdeaListingModelService>
+
+@foreach (var idea in Model)
+{
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="community-edition" border-radius: 25px>
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            <div class="separator"></div>
+            <h4 class="ideaname">@idea.Name</h4>
+            <a class="btn btn-primary" asp-controller="Ideas" asp-action="Details" asp-route-id="@idea.Id">Details</a>
+        </div>
+    </div>
+}
+

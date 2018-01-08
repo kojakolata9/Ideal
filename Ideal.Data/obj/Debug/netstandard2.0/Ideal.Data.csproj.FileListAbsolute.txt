@@ -1,0 +1,9 @@
+C:\Users\Ivan Stoyanov\source\repos\Ideal\Ideal.Data\bin\Debug\netstandard2.0\Ideal.Data.deps.json
+C:\Users\Ivan Stoyanov\source\repos\Ideal\Ideal.Data\bin\Debug\netstandard2.0\Ideal.Data.dll
+C:\Users\Ivan Stoyanov\source\repos\Ideal\Ideal.Data\obj\Debug\netstandard2.0\Ideal.Data.csprojResolveAssemblyReference.cache
+C:\Users\Ivan Stoyanov\source\repos\Ideal\Ideal.Data\obj\Debug\netstandard2.0\Ideal.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ivan Stoyanov\source\repos\Ideal\Ideal.Data\obj\Debug\netstandard2.0\Ideal.Data.AssemblyInfoInputs.cache
+C:\Users\Ivan Stoyanov\source\repos\Ideal\Ideal.Data\obj\Debug\netstandard2.0\Ideal.Data.AssemblyInfo.cs
+C:\Users\Ivan Stoyanov\source\repos\Ideal\Ideal.Data\bin\Debug\netstandard2.0\Ideal.Data.pdb
+C:\Users\Ivan Stoyanov\source\repos\Ideal\Ideal.Data\obj\Debug\netstandard2.0\Ideal.Data.dll
+C:\Users\Ivan Stoyanov\source\repos\Ideal\Ideal.Data\obj\Debug\netstandard2.0\Ideal.Data.pdb

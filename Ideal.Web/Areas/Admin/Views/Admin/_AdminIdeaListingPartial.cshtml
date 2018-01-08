@@ -1,0 +1,12 @@
+﻿
+@model IEnumerable<Ideal.Services.Models.IdeaListingModelService>
+
+@foreach (var idea in Model)
+{
+    <tr style="color:white">
+        <th>@idea.Id</th>
+        <th>@idea.Name</th>
+        <th><a class="btn btn-success" asp-controller="Admin" asp-action="Approve" asp-route-id="@idea.Id">Approve</a></th>
+    </tr>
+}
+

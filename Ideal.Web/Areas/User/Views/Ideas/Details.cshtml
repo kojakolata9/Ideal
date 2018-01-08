@@ -1,0 +1,120 @@
+﻿@model IdeaDetailsViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="row panel panel-success" style="margin-top:2%;">
+    <div class="panel-heading lead">
+        <div class="row">
+            <div class="col-lg-8 col-md-8">View @Model.Idea.Name Details</div>           
+        </div>
+    </div>
+    <div class="panel-body">
+
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <center>
+                            <span class="text-left">
+
+
+
+                            </span>
+                        </center>
+
+                        <div class="table-responsive panel">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">
+                                            @if (Model.Idea.SignUp)
+                                            {
+                                                <a  class="btn btn-success btn-block"asp-controller="Ideas" asp-action="SignUp" asp-route-name="@Model.Idea.TeamName"> Sign up</a>
+                                            }
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#Summery" class="text-success"> Summery</a></li>
+                            <li><a data-toggle="tab" href="#Description" class="text-success">Description</a></li>  
+                            <li><a data-toggle="tab" href="#TeamMembers" class="text-success">TeamMembers</a></li>                            
+
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="Summery" class="tab-pane fade in active">
+
+                                <div class="table-responsive panel">
+                                    <table class="table">
+                                        <tbody>
+
+                                            <tr>
+                                                <td class="text-success">Idea Name</td>
+                                                <td>@Model.Idea.Name</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-success">Team Name</td>
+                                                <td>@Model.Idea.TeamName</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-success">IdeaCreator Name</td>
+                                                <td>@Model.Idea.IdeaOwner</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-success">Team size</td>
+                                                <td>@Model.Idea.Participants.Count/@Model.Idea.Teamsize</td>
+                                            </tr>                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div id="Description" class="tab-pane fade">
+                                <div class="table-responsive panel">
+                                    @Model.Idea.Description
+                                </div>
+                            </div>
+                            
+
+                                <div id="TeamMembers" class="tab-pane fade in active">
+
+                                    <div class="table-responsive panel">
+                                        <table class="table">
+                                            <tbody>
+                                            @foreach (var participant in Model.Idea.Participants)
+                                            {
+                                                <tr>
+                                                    <td class="text-success">Name</td>
+                                                    <td>@participant</td>
+                                                </tr>
+                                            }
+                                            
+                                                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /.table-responsive -->
+
+    </div>
+    </div>
+</div>

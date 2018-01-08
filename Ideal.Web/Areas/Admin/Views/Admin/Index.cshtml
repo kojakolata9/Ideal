@@ -1,0 +1,45 @@
+﻿@model IdeaListingViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <h2>Condensed Table</h2>
+    <ul class="pagination">
+        <li class="page-item">
+            @if (Model.CurrentPage != 1)
+            {
+                <a class="page-link" href="/admin/admin?page=@Model.PreviousPage" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            }
+        </li>
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            <li class="page-item"><a class="page-link" href="/admin/admin?page=@i">@i</a></li>
+        }
+        @if (Model.CurrentPage != Model.TotalPages)
+        {
+            <li class="page-item">
+                <a class="page-link" href="/admin/admin?page=@Model.NextPage" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        }
+    </ul>    
+    <table class="table table-condensed">
+        <thead>
+        <tr style="color:white">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Approve</th>
+        </tr>
+        </thead>
+        <tbody>
+        @await Html.PartialAsync("_AdminIdeaListingPartial", Model.Ideas)
+        </tbody>
+    </table>
+</div>
+
